@@ -15,6 +15,8 @@
 
 class SurfaceGLWidget : public QOpenGLWidget, protected QOpenGLFunctions
 {
+    Q_OBJECT
+
 public:
     SurfaceGLWidget(QWidget* parent);
 
