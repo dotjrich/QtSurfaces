@@ -15,18 +15,18 @@
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0">
+    <item row="1" column="0">
      <layout class="QVBoxLayout" name="verticalLayout">
       <property name="sizeConstraint">
        <enum>QLayout::SetMaximumSize</enum>
       </property>
       <item>
-       <widget class="QComboBox" name="cmbSurfaceType"/>
-      </item>
-      <item>
-       <widget class="QOpenGLWidget" name="glWidget"/>
+       <layout class="QVBoxLayout" name="vlayoutGL"/>
       </item>
      </layout>
+    </item>
+    <item row="0" column="0">
+     <widget class="QComboBox" name="cmbSurfaceType"/>
     </item>
    </layout>
   </widget>

@@ -25,10 +25,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    torus.cpp
+    torus.cpp \
+    surfaceglwidget.cpp
 
 HEADERS  += mainwindow.h \
     surface.h \
-    torus.h
+    torus.h \
+    surfaceglwidget.h
 
 FORMS    += mainwindow.ui

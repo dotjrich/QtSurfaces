@@ -8,6 +8,7 @@
 
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "surfaceglwidget.h"
 
 MainWindow::MainWindow(const std::map<QString, Surface*>& surfaces, QWidget *parent):
     m_surfaces(surfaces),
@@ -17,7 +18,9 @@ MainWindow::MainWindow(const std::map<QString, Surface*>& surfaces, QWidget *par
     ui->setupUi(this);
 
     m_cmbSurfaceType = ui->cmbSurfaceType;
-    m_glWidget = ui->glWidget;
+    m_glWidget = new SurfaceGLWidget(this);
+
+    ui->vlayoutGL->addWidget(m_glWidget);
 
     for (auto i = m_surfaces.begin(); i != m_surfaces.end(); ++i) {
         m_cmbSurfaceType->addItem(i->first);
