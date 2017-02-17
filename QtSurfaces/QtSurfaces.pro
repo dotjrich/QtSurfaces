@@ -24,8 +24,11 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    torus.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    surface.h \
+    torus.h
 
 FORMS    += mainwindow.ui
