@@ -34,3 +34,7 @@ HEADERS  += mainwindow.h \
     surfaceglwidget.h
 
 FORMS    += mainwindow.ui
+
+DISTFILES += \
+    vert_default.glsl \
+    frag_default.glsl

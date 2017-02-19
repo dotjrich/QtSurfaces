@@ -25,6 +25,12 @@ SurfaceGLWidget::initializeGL()
     initializeOpenGLFunctions();
 
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+
+    // Load default shaders.
+    m_shader.addShaderFromSourceFile(QOpenGLShader::Vertex, "vert_default.glsl");
+    m_shader.addShaderFromSourceFile(QOpenGLShader::Fragment, "frag_default.glsl");
+    m_shader.link();
+    m_shader.bind();
 }
 
 // -----------------------------------------------------------------------
